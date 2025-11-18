@@ -1,11 +1,11 @@
 {
   "expo": {
-    "name": "Money-Flow",
-    "slug": "Money-Flow",
+    "name": "rn-todo-with-convex",
+    "slug": "rn-todo-with-convex",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/images/icon.png",
-    "scheme": "moneyflow",
+    "scheme": "rntodowithconvex",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
