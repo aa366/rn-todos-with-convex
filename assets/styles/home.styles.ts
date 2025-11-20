@@ -119,7 +119,7 @@ export const createHomeStyles = (colors: ColorScheme) => {
     },
     todoListContent: {
       paddingHorizontal: 24,
-      paddingBottom: 100,
+      // paddingBottom: 100,
     },
     emptyListContainer: {
       flexGrow: 1,

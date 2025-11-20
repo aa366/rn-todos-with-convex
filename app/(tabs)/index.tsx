@@ -19,7 +19,6 @@ import {
   TouchableOpacity,
   View,
 } from "react-native";
-import { SafeAreaView } from "react-native-safe-area-context";
 
 type Todo = Doc<"todos">;
 
@@ -196,20 +195,19 @@ export default function Index() {
       style={homeStyles.container}
     >
       <StatusBar barStyle={colors.statusBarStyle} />
-      <SafeAreaView style={homeStyles.safeArea}>
-        <Header />
-        <TodoInput />
 
-        <FlatList
-          data={todos}
-          renderItem={RenderTodoItem}
-          keyExtractor={(item) => item._id}
-          style={homeStyles.todoList}
-          contentContainerStyle={homeStyles.todoListContent}
-          ListEmptyComponent={<EmptyState />}
-          showsVerticalScrollIndicator={false}
-        />
-      </SafeAreaView>
+      <Header />
+      <TodoInput />
+
+      <FlatList
+        data={todos}
+        renderItem={RenderTodoItem}
+        keyExtractor={(item) => item._id}
+        style={homeStyles.todoList}
+        contentContainerStyle={homeStyles.todoListContent}
+        ListEmptyComponent={<EmptyState />}
+        showsVerticalScrollIndicator={false}
+      />
     </LinearGradient>
   );
 }
