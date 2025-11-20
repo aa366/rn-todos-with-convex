@@ -1,5 +1,5 @@
-import { Link } from "expo-router";
-import { Text, View } from "react-native";
+import ProgressStats from "@/components/ProgressStats";
+import { View } from "react-native";
 
 export default function Index() {
   return (
@@ -10,10 +10,11 @@ export default function Index() {
         alignItems: "center",
       }}
     >
-      <Text>Edit app/index.tsx to edit this screen.</Text>
+      <ProgressStats />
+      {/* <Text>Edit app/index.tsx to edit this screen.</Text>
       <Link href={"/settings"}>
         <Text> Settings</Text>
-      </Link>
+      </Link> */}
     </View>
   );
 }
